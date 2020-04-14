@@ -1,6 +1,19 @@
-import React, {useReducer} from 'react';
+import React, {useReducer, useRef} from 'react';
 import './App.css';
-import FetchingDataByUseReducer from './components/FetchingDataByUseReducer'
+import FormComp from './component/FormComp';
+// import CounterOne from './component/CounterOne';
+// import CounterTwo from './component/CounterTwo';
+// import DocumentTitleUpdateOne from './component/DocumentTitleUpdateOne';
+// import DocumentTitleUpdateTwo from './component/DocumentTitleUpdateTwo';
+// import UseDebugValueHook from './component/UseDebugValueHook';
+// import UseImperativeHandleHook from './component/UseImperativeHandleHook';
+// import ClassCompToClearTimer from './component/ClassCompToClearTimer';
+// import UseRefAsClassProperty from './component/UseRefAsClassProperty';
+// import UseRefForDomNodes from './components/UseRefForDomNodes';
+// import UseMemoHook from './components/useMemoHook';
+
+// import MainComponent from './components/useCallback/MainComponent';
+// import FetchingDataByUseReducer from './components/FetchingDataByUseReducer'
 // import FetchingData from './components/FetchingData';
 // import HookCounter from './components/HookCounter';
 // import HookCounterWithPrevValue from './components/HookCounterWithPrevValue';
@@ -37,6 +50,7 @@ import FetchingDataByUseReducer from './components/FetchingDataByUseReducer'
 // }
 function App() {
   // let [count, dispatcher] = useReducer(reducer, initialValue);
+  // let inputRef = useRef();
 
   return (
     <div className="App">
@@ -67,7 +81,20 @@ function App() {
         <CompC />
       </CountContext.Provider> */}
       {/* <FetchingData /> */}
-      <FetchingDataByUseReducer />
+      {/* <FetchingDataByUseReducer /> */}
+      {/* <MainComponent /> */}
+      {/* <UseMemoHook /> */}
+      {/* <UseRefForDomNodes /> */}
+      {/* <ClassCompToClearTimer />
+      <UseRefAsClassProperty /> */}
+      {/* <UseImperativeHandleHook ref={inputRef}/>
+      <button onClick={()=>inputRef.current.focusCustom()}>focus</button> */}
+      {/* <UseDebugValueHook /> */}
+      {/* <DocumentTitleUpdateOne />
+      <DocumentTitleUpdateTwo /> */}
+      {/* <CounterOne />
+      <CounterTwo /> */}
+      <FormComp />
     </div>
   );
 }
