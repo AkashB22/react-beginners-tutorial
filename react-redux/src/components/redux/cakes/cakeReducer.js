@@ -1,6 +1,9 @@
 import {BUY_CAKE} from './cakesTypes';
 
-let reducer = (state=BUY_CAKE, action)=>{
+const initialState = {
+    numOfCakes: 10
+}
+let reducer = (state=initialState, action)=>{
     switch(action.type){
         case BUY_CAKE : return {
             ...state,

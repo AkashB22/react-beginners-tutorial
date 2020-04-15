@@ -2,22 +2,24 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {buyCake} from './redux/cakes/cakesAction';
 
-function CakeComponent() {
+function CakeComponent(props) {
     return (
         <div>
             <h2>Number of Cakes: {props.numOfCakes}</h2>
-            <button onClick={()=> props.dispatch(buyCake())}>Buy Cake</button>
+            <button onClick={props.buyCake}>Buy Cake</button>
         </div>
     )
 }
 
-let mapStateToProp = (state)=>{
+let mapStateToProps = (state)=>{
     return {
-        state: store.state
+        numOfCakes: state.numOfCakes
     }
 }
 
-let mapDispatchToProp = (dispatch)=>{
-    return store(dispatch)
+let mapDispatchToProps = dispatch=>{
+    return {
+        buyCake: ()=> dispatch(buyCake())
+    }
 }
-export default connect(mapStateToProp, mapDispatchToProp)(CakeComponent);
+export default connect(mapStateToProps, mapDispatchToProps)(CakeComponent);
