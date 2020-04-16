@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {buyCake} from './redux/cakes/cakesAction';
+import {buyCake} from './redux';
 
 function CakeComponent(props) {
     return (
