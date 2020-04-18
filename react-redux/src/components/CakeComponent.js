@@ -7,14 +7,14 @@ function CakeComponent(props) {
         <div>
             <h2>Number of Cakes available: {props.numOfCakes}</h2>
 
-            <button onClick={props.buyCake}>Buy Cake Now!</button>
+            <button onClick={()=>props.buyCake()}>Buy Cake Now!</button>
         </div>
     )
 }
 
 let mapStateToProps = (state)=>{
     return {
-        numOfCakes: state.numOfCakes
+        numOfCakes: state.cakes.numOfCakes
     }
 }
 
