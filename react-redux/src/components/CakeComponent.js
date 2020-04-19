@@ -8,6 +8,7 @@ function CakeComponent(props) {
             <h2>Number of Cakes available: {props.numOfCakes}</h2>
 
             <button onClick={props.buyCake}>Buy Cake Now!</button>
+
         </div>
     )
 }
